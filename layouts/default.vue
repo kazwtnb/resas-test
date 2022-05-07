@@ -1,5 +1,6 @@
 <template>
   <div>
+    <OrganismsAppHeader />
     <main>
       <slot />
     </main>
