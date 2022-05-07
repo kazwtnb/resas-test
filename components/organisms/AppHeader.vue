@@ -8,8 +8,8 @@ header {
   height: 45px;
   align-items: center;
   justify-content: center;
-  background-color: $color-main;
-  color: $color-white;
-  box-shadow: $shadow-2;
+  background-color: colors.$color-main;
+  color: colors.$color-white;
+  box-shadow: colors.$shadow-2;
 }
 </style>

@@ -4,4 +4,11 @@
   </AtomsUiSection>
 </template>
 <script setup lang="ts"></script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  text-align: center;
+  + * {
+    margin-top: 20px;
+  }
+}
+</style>

@@ -1,13 +1,15 @@
+@use "~/node_modules/destyle.css/destyle.min";
+
 html {
-  font-size: $font-size-default;
-  color: $color-main;
+  font-size: typography.$font-size-default;
+  color: colors.$color-main;
 }
 
 body {
-  background-color: $color-background;
+  background-color: colors.$color-background;
 }
 
 h1 {
-  font-weight: $font-weight-bold;
-  font-size: $font-size-large;
+  font-weight: typography.$font-weight-bold;
+  font-size: typography.$font-size-large;
 }

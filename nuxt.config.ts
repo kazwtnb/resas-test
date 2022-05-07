@@ -2,14 +2,7 @@ import { defineNuxtConfig } from 'nuxt';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  meta: {
-    link: [
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css'
-      }
-    ]
-  },
+  meta: {},
   css: ['~/assets/styles/style.scss'],
   typescript: {
     strict: true
@@ -19,7 +12,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData:
-            '@import "~/assets/styles/global/colors"; @import "~/assets/styles/global/typography";'
+            '@use "~/assets/styles/global/colors"; @use "~/assets/styles/global/typography";'
         }
       }
     }
