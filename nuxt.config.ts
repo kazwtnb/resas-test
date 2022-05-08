@@ -23,5 +23,11 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+  runtimeConfig: {
+    RESAS_API_KEY: process.env.RESAS_API_KEY,
+    public: {
+      RESAS_ENDPOINT_BASE_URL: 'https://opendata.resas-portal.go.jp/'
+    }
   }
 });
