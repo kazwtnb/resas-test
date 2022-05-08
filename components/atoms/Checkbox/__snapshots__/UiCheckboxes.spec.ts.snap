@@ -1,0 +1,235 @@
+// Vitest Snapshot v1
+
+exports[`UiCheckboxes > snapshot > {
+  name: '1つ目を選択済み',
+  modelValue: [ { id: '1', value: 'a' }, [length]: 1 ],
+  items: [ { id: '1', value: 'a' }, { id: '2', value: 'b' }, [length]: 2 ]
+} 1`] = `
+<ul
+  class="ui-checkboxes"
+  data-v-4ad4a939=""
+>
+  
+  <li
+    data-v-4ad4a939=""
+  >
+    <div
+      class="ui-checkbox"
+      data-v-2d44444b=""
+      data-v-4ad4a939=""
+    >
+      <label
+        data-v-2d44444b=""
+      >
+        <input
+          data-v-2d44444b=""
+          type="checkbox"
+        />
+        <div
+          class="ui-checkbox-box ui-checkbox-box--checked"
+          data-v-2d44444b=""
+        >
+          <i
+            class="fa-solid fa-check"
+            data-v-2d44444b=""
+          />
+        </div>
+        <span
+          data-v-2d44444b=""
+        >
+          a
+        </span>
+      </label>
+    </div>
+  </li>
+  <li
+    data-v-4ad4a939=""
+  >
+    <div
+      class="ui-checkbox"
+      data-v-2d44444b=""
+      data-v-4ad4a939=""
+    >
+      <label
+        data-v-2d44444b=""
+      >
+        <input
+          data-v-2d44444b=""
+          type="checkbox"
+        />
+        <div
+          class="ui-checkbox-box"
+          data-v-2d44444b=""
+        >
+          <i
+            class="fa-solid fa-check"
+            data-v-2d44444b=""
+          />
+        </div>
+        <span
+          data-v-2d44444b=""
+        >
+          b
+        </span>
+      </label>
+    </div>
+  </li>
+  
+</ul>
+`;
+
+exports[`UiCheckboxes > snapshot > {
+  name: 'すべて選択済み',
+  modelValue: [ { id: '1', value: 'a' }, { id: '2', value: 'b' }, [length]: 2 ],
+  items: [ { id: '1', value: 'a' }, { id: '2', value: 'b' }, [length]: 2 ]
+} 1`] = `
+<ul
+  class="ui-checkboxes"
+  data-v-4ad4a939=""
+>
+  
+  <li
+    data-v-4ad4a939=""
+  >
+    <div
+      class="ui-checkbox"
+      data-v-2d44444b=""
+      data-v-4ad4a939=""
+    >
+      <label
+        data-v-2d44444b=""
+      >
+        <input
+          data-v-2d44444b=""
+          type="checkbox"
+        />
+        <div
+          class="ui-checkbox-box ui-checkbox-box--checked"
+          data-v-2d44444b=""
+        >
+          <i
+            class="fa-solid fa-check"
+            data-v-2d44444b=""
+          />
+        </div>
+        <span
+          data-v-2d44444b=""
+        >
+          a
+        </span>
+      </label>
+    </div>
+  </li>
+  <li
+    data-v-4ad4a939=""
+  >
+    <div
+      class="ui-checkbox"
+      data-v-2d44444b=""
+      data-v-4ad4a939=""
+    >
+      <label
+        data-v-2d44444b=""
+      >
+        <input
+          data-v-2d44444b=""
+          type="checkbox"
+        />
+        <div
+          class="ui-checkbox-box ui-checkbox-box--checked"
+          data-v-2d44444b=""
+        >
+          <i
+            class="fa-solid fa-check"
+            data-v-2d44444b=""
+          />
+        </div>
+        <span
+          data-v-2d44444b=""
+        >
+          b
+        </span>
+      </label>
+    </div>
+  </li>
+  
+</ul>
+`;
+
+exports[`UiCheckboxes > snapshot > {
+  name: '未選択',
+  modelValue: [ [length]: 0 ],
+  items: [ { id: '1', value: 'a' }, { id: '2', value: 'b' }, [length]: 2 ]
+} 1`] = `
+<ul
+  class="ui-checkboxes"
+  data-v-4ad4a939=""
+>
+  
+  <li
+    data-v-4ad4a939=""
+  >
+    <div
+      class="ui-checkbox"
+      data-v-2d44444b=""
+      data-v-4ad4a939=""
+    >
+      <label
+        data-v-2d44444b=""
+      >
+        <input
+          data-v-2d44444b=""
+          type="checkbox"
+        />
+        <div
+          class="ui-checkbox-box"
+          data-v-2d44444b=""
+        >
+          <i
+            class="fa-solid fa-check"
+            data-v-2d44444b=""
+          />
+        </div>
+        <span
+          data-v-2d44444b=""
+        >
+          a
+        </span>
+      </label>
+    </div>
+  </li>
+  <li
+    data-v-4ad4a939=""
+  >
+    <div
+      class="ui-checkbox"
+      data-v-2d44444b=""
+      data-v-4ad4a939=""
+    >
+      <label
+        data-v-2d44444b=""
+      >
+        <input
+          data-v-2d44444b=""
+          type="checkbox"
+        />
+        <div
+          class="ui-checkbox-box"
+          data-v-2d44444b=""
+        >
+          <i
+            class="fa-solid fa-check"
+            data-v-2d44444b=""
+          />
+        </div>
+        <span
+          data-v-2d44444b=""
+        >
+          b
+        </span>
+      </label>
+    </div>
+  </li>
+  
+</ul>
+`;

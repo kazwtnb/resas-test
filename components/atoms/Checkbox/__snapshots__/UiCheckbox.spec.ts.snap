@@ -1,0 +1,61 @@
+// Vitest Snapshot v1
+
+exports[`UiCheckbox > snapshot > { name: '未選択', modelValue: false } 1`] = `
+<div
+  class="ui-checkbox"
+  data-v-2d44444b=""
+>
+  <label
+    data-v-2d44444b=""
+  >
+    <input
+      data-v-2d44444b=""
+      type="checkbox"
+    />
+    <div
+      class="ui-checkbox-box"
+      data-v-2d44444b=""
+    >
+      <i
+        class="fa-solid fa-check"
+        data-v-2d44444b=""
+      />
+    </div>
+    <span
+      data-v-2d44444b=""
+    >
+      value
+    </span>
+  </label>
+</div>
+`;
+
+exports[`UiCheckbox > snapshot > { name: '選択済み', modelValue: true } 1`] = `
+<div
+  class="ui-checkbox"
+  data-v-2d44444b=""
+>
+  <label
+    data-v-2d44444b=""
+  >
+    <input
+      data-v-2d44444b=""
+      type="checkbox"
+    />
+    <div
+      class="ui-checkbox-box ui-checkbox-box--checked"
+      data-v-2d44444b=""
+    >
+      <i
+        class="fa-solid fa-check"
+        data-v-2d44444b=""
+      />
+    </div>
+    <span
+      data-v-2d44444b=""
+    >
+      value
+    </span>
+  </label>
+</div>
+`;
