@@ -3,6 +3,7 @@
     <h1>都道府県別人口構成</h1>
     <AtomsUiCard>
       <MoleculesPrefecturesSelect />
+      <AtomsUiSpacer height="2rem" />
       <AtomsUiChart :data="data" x-axis-title="（年）" y-axis-title="人口（人）" />
     </AtomsUiCard>
   </AtomsUiSection>
