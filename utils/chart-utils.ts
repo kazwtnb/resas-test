@@ -1,5 +1,8 @@
-import { chart, Options } from 'highcharts';
+import { Options } from 'highcharts';
+import pkg from 'highcharts/highcharts.js';
 import { CreateLineChartInput } from '../types/models/chart-model';
+
+const { chart } = pkg;
 
 export const createLineChart = (input: CreateLineChartInput): void => {
   chart(input.id, {
