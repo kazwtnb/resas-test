@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "destyle.css": "^3.0.2",
+    "highcharts": "^10.1.0",
     "lodash-es": "^4.17.21"
   }
 }
