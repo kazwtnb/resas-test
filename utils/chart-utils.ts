@@ -1,11 +1,12 @@
 import { Options } from 'highcharts';
-import pkg from 'highcharts/highcharts.js';
+import Highcharts from 'highcharts/highcharts.js';
 import { CreateLineChartInput } from '../types/models/chart-model';
 
-const { chart } = pkg;
-
+/**
+ * Highchartsで線グラフを描画する
+ */
 export const createLineChart = (input: CreateLineChartInput): void => {
-  chart(input.id, {
+  Highcharts.chart(input.renderTo, {
     title: {
       text: ''
     },
@@ -58,4 +59,12 @@ export const createLineChart = (input: CreateLineChartInput): void => {
       ]
     }
   } as Options);
+};
+
+/**
+ * 固定値のIDを使用する設定に変更する
+ * snapshotテストが自動採番IDで落ちるので追加
+ */
+export const useTestConfig = () => {
+  Highcharts.useSerialIds(true);
 };

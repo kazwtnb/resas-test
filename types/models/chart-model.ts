@@ -4,7 +4,7 @@ export interface ChartData {
 }
 
 export interface CreateLineChartInput {
-  id: string;
+  renderTo: string | HTMLDivElement;
   xAxisTitle: string;
   yAxisTitle: string;
   startYear: number;

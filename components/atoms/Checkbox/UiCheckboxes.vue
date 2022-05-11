@@ -37,7 +37,7 @@ const props = withDefaults(defineProps<Props<any>>(), {
   modelValue: () => [],
   idKey: '',
   labelKey: '',
-  minItemWidth: '100px'
+  minItemWidth: '90px'
 });
 const { modelValue } = toRefs(props);
 const { selected, toggle } = useMultiSelect(modelValue, props.idKey);
