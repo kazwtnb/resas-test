@@ -1,0 +1,8 @@
+export const useCreateChartContainer = () => {
+  const container = document.createElement('div');
+  const chartTarget = document.createElement('div');
+  chartTarget.id = 'test-chart-container';
+  container.appendChild(chartTarget);
+
+  return { container, chartTarget };
+};

@@ -1,24 +1,17 @@
+import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { ref } from 'vue';
 import { mount } from '@vue/test-utils';
-import { beforeEach, describe, expect, test, vi } from 'vitest';
 import PrefecturesSelect from './PrefecturesSelect.vue';
-import * as usePrefectures from '~/composables/usePrefectures/usePrefectures';
+import { testPrefectures } from '~~/test-utils/test-data/resas/prefectures';
+import $resasRepository from '~~/repository/resas-repository';
 
 describe('PrefecturesSelect', () => {
-  const testPrefecturesResponse = [
-    { prefCode: 1, prefName: '北海道' },
-    { prefCode: 2, prefName: '青森県' },
-    { prefCode: 3, prefName: '岩手県' },
-    { prefCode: 4, prefName: '宮城県' },
-    { prefCode: 5, prefName: '秋田県' },
-    { prefCode: 6, prefName: '山形県' }
-  ];
-
   beforeEach(() => {
-    vi.spyOn(usePrefectures, 'usePrefectures').mockReturnValue({
-      prefectures: ref(testPrefecturesResponse),
-      selectedPrefectures: ref([])
-    });
+    // /serverディレクトリ配下のBFFがバグでテストで動作しないため、Repository層でモック
+    // https://github.com/nuxt/framework/issues/3252
+    vi.spyOn($resasRepository, 'prefectures').mockReturnValue(
+      ref(testPrefectures)
+    );
   });
 
   test('Snapshot', () => {

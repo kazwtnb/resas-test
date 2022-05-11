@@ -1,24 +1,15 @@
 <template>
-  <AtomsUiSection>
+  <UiSection>
     <h1>都道府県別人口構成</h1>
-    <AtomsUiCard>
-      <MoleculesPrefecturesSelect />
-      <AtomsUiSpacer height="2rem" />
-      <AtomsUiChart :data="data" x-axis-title="（年）" y-axis-title="人口（人）" />
-    </AtomsUiCard>
-  </AtomsUiSection>
+    <UiCard>
+      <PopulationViewer />
+    </UiCard>
+  </UiSection>
 </template>
 <script setup lang="ts">
-const data = [
-  {
-    name: 'hoge',
-    data: [1, 2, 3, 4, 5, 6, 7]
-  },
-  {
-    name: 'huga',
-    data: [3, 4, 5, 6, 7, 8, 9]
-  }
-];
+import UiSection from '~/components/atoms/UiSection.vue';
+import UiCard from '~/components/atoms/UiCard.vue';
+import PopulationViewer from '~/components/organisms/PopulationViewer.vue';
 </script>
 <style lang="scss" scoped>
 h1 {

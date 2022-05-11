@@ -1,13 +1,9 @@
-import { Ref } from 'vue';
+import { ref } from 'vue';
 import { Prefecture } from '../../types/models/resas-model';
+import $resasRepository from '~~/repository/resas-repository';
 
-export const usePrefectures = (): {
-  prefectures: Ref<Prefecture[]>;
-  selectedPrefectures: Ref<Prefecture[]>;
-} => {
-  const { data } = useFetch<Prefecture[]>(
-    '/api/resas/prefectures'
-  );
+export const usePrefectures = () => {
+  const prefectures = $resasRepository.prefectures();
   const selectedPrefectures = ref<Prefecture[]>([]);
-  return { prefectures: data, selectedPrefectures };
+  return { prefectures, selectedPrefectures };
 };
