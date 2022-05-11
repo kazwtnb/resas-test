@@ -1,23 +1,15 @@
 <template>
-  <AtomsUiSection>
+  <UiSection>
     <h1>都道府県別人口構成</h1>
-    <AtomsUiCard>
-      <UiCheckboxes
-        v-model="selected"
-        :items="data"
-        id-key="id"
-        label-key="name"
-      />
-    </AtomsUiCard>
-  </AtomsUiSection>
+    <UiCard>
+      <PopulationViewer />
+    </UiCard>
+  </UiSection>
 </template>
 <script setup lang="ts">
-import UiCheckboxes from '~~/components/atoms/Checkbox/UiCheckboxes.vue';
-const selected = ref([]);
-const data = [
-  { id: '1', name: 'hoge' },
-  { id: '2', name: 'fuga' }
-];
+import UiSection from '~/components/atoms/UiSection.vue';
+import UiCard from '~/components/atoms/UiCard.vue';
+import PopulationViewer from '~/components/organisms/PopulationViewer.vue';
 </script>
 <style lang="scss" scoped>
 h1 {

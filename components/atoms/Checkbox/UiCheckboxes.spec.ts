@@ -1,12 +1,7 @@
-import { mount, shallowMount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import { describe, expect, test } from 'vitest';
 import UiCheckboxes from './UiCheckboxes.vue';
 import UiCheckbox from './UiCheckbox.vue';
-
-interface TestInterface {
-  id: string;
-  value: string;
-}
 
 describe('UiCheckboxes', () => {
   const object1 = { id: '1', value: 'a' };
@@ -41,7 +36,7 @@ describe('UiCheckboxes', () => {
         ]
       }
     ])(`%o`, ({ input, expected }) => {
-      const wrapper = shallowMount(UiCheckboxes, {
+      const wrapper = mount(UiCheckboxes, {
         props: {
           modelValue: input.modelValue,
           items: input.items,

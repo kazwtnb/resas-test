@@ -18,5 +18,9 @@ section {
   margin-left: auto;
   padding: 2rem;
   max-width: v-bind(maxWidth);
+
+  @media (max-width: breakpoints.$sp) {
+    padding: 0.75rem;
+  }
 }
 </style>
