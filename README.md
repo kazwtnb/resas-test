@@ -1,21 +1,28 @@
-# Nuxt 3 Minimal Starter
+# RESAS API TEST
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+RESAS APIを用いて、
+都道府県ごとの人口をグラフ表示するサンプル
+https://snazzy-elf-ead648.netlify.app/
 
-## Setup
+どうしても触ってみたくなりNuxt 3 RC版を使用
 
-Make sure to install the dependencies:
+# 使用技術
 
-```bash
-# yarn
-yarn install
+NuxtJS/3.0.0-rc.2
+vitest/0.10.5
+highcharts
+netlify
+Node.js 16.15.0（nvm管理）
 
-# npm
-npm install
+## ローカル実行のSetup
 
-# pnpm
-pnpm install --shamefully-hoist
 ```
+nvm install
+npm install
+```
+
+プロジェクト直下に.envファイルを作成し、
+RESAS_API_KEY={有効なAPI_KEY}を指定する
 
 ## Development Server
 
@@ -25,18 +32,27 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Production
+## Run & Watch Test
+```bash
+npm run test
+```
+
+## Test & SSR Build on CD
 
 Build the application for production:
 
 ```bash
-npm run build
+npm run cd
 ```
 
-Locally preview production build:
+## 全体のディレクトリ構成イメージ
 
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+/pages : ページコンポーネント
+↑↓
+/components : 通常コンポーネント Atomicデザインライクにディレクトリ分類
+↑↓
+/composables : ロジック層 ReactHooksライクにUseHogeにロジックを分離
+↑↓
+/repository : リポジトリ層 APIとの通信部分を吸収。RC版の残存バグでテストで/serverが実行できないため、テストではこの層でモック
+↑↓
+/server : BFF層 外部API通信をNuxtのserver機能で実装。バックエンドから通信を行うためAPIキーを隠蔽できる

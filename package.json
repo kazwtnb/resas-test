@@ -5,7 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "cd": "nuxi prepare && vitest run && npm run generate",
+    "cd": "nuxi prepare && vitest run && npm run build",
     "test": "nuxi prepare && vitest",
     "lint": "eslint --ext .ts,.js,.vue ."
   },
