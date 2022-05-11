@@ -19,5 +19,9 @@ const props = withDefaults(defineProps<Props>(), {
   border-radius: 4px;
   background-color: colors.$color-white;
   box-shadow: colors.$shadow-1;
+
+  @media (max-width: breakpoints.$sp) {
+    padding: 1rem;
+  }
 }
 </style>

@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData:
-            '@use "~/assets/styles/global/colors"; @use "~/assets/styles/global/typography";'
+            '@use "~/assets/styles/global/colors"; @use "~/assets/styles/global/typography"; @use "~/assets/styles/global/breakpoints";'
         }
       }
     }
